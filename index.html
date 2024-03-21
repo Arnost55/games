@@ -2,23 +2,59 @@
 <html>
 <head>
     <title>My Game Site</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .game-image {
+            width: 200px;
+            height: 200px;
+            margin: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .game-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My Game</h1>
     <p>Click on the image to play the game!</p>
 
-    <img src="images/blockdude.png" alt="Image 1" onclick="window.location.href='blockdude.html'">
-    <img src="images/bomberman.png" alt="Image 2" onclick="window.location.href='bomberman.html'">
-    <img src="images/breakout.png" alt="Image 3" onclick="window.location.href='breakout.html'">
-    <img src="images/doodlejump.png" alt="Image 4" onclick="window.location.href='doodlejump.html'">
-    <img src="images/frogger.png" alt="Image 5" onclick="window.location.href='frogger.html'">
-    <img src="images/helicopter.png" alt="Image 6" onclick="window.location.href='helicopter.html'">
-    <img src="images/missilecommand.png" alt="Image 7" onclick="window.location.href='missilecommand.html'">
-    <img src="images/pong.png" alt="Image 8" onclick="window.location.href='pong.html'">
-    <img src="images/puzzlebobble.png" alt="Image 9" onclick="window.location.href='puzzlebobble.html'">
-    <img src="images/snake.png" alt="Image 10" onclick="window.location.href='snake.html'">
-    <img src="images/sokoban.png" alt="Image 11" onclick="window.location.href='sokoban.html'">
-    <img src="images/tetris.png" alt="Image 11" onclick="window.location.href='tetris.html'">
-    <img src="images/fightpong.png" alt="Image 11" onclick="window.location.href='fightpong.html'">
+    <div class="game-container">
+        <img class="game-image" src="images/blockdude.png" alt="Image 1" onclick="window.location.href='blockdude.html'">
+        <img class="game-image" src="images/bomberman.png" alt="Image 2" onclick="window.location.href='bomberman.html'">
+        <img class="game-image" src="images/breakout.png" alt="Image 3" onclick="window.location.href='breakout.html'">
+        <img class="game-image" src="images/doodlejump.png" alt="Image 4" onclick="window.location.href='doodlejump.html'">
+        <img class="game-image" src="images/frogger.png" alt="Image 5" onclick="window.location.href='frogger.html'">
+        <img class="game-image" src="images/helicopter.png" alt="Image 6" onclick="window.location.href='helicopter.html'">
+        <img class="game-image" src="images/missilecommand.png" alt="Image 7" onclick="window.location.href='missilecommand.html'">
+        <img class="game-image" src="images/pong.png" alt="Image 8" onclick="window.location.href='pong.html'">
+        <img class="game-image" src="images/puzzlebobble.png" alt="Image 9" onclick="window.location.href='puzzlebobble.html'">
+        <img class="game-image" src="images/snake.png" alt="Image 10" onclick="window.location.href='snake.html'">
+        <img class="game-image" src="images/sokoban.png" alt="Image 11" onclick="window.location.href='sokoban.html'">
+        <img class="game-image" src="images/tetris.png" alt="Image 12" onclick="window.location.href='tetris.html'">
+        <img class="game-image" src="images/fightpong.png" alt="Image 13" onclick="window.location.href='fightpong.html'">
+    </div>
 </body>
 </html>
